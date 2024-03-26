@@ -6,7 +6,7 @@ A website to aid dancers with choreo block and freestyle dancing
 The website concept and outreach with testers was contributed by Jayden Pagsolingan.
 
 ## Future Plans
-Since the current website uses pure JavaScript, I plan to overhaul the site using the MERN stack. This overhaul will allow for better data management and open the door for integrating an AI API.
+Since the current website uses pure JavaScript, I plan to overhaul the site using the MERN stack. This overhaul will allow for better data management and open the door for API integration.
 
 ## Getting Started
 
