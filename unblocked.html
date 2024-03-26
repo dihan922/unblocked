@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Unblocked</title>
+    <link rel="stylesheet" href="unblocked.css">
+</head>
+
+<body>
+    <h1 class="title" style="font-size: 32px;">Unblocked</h1>
+    <h3 class="title">Created by Dihan Almamun & Jayden Pagsolingan</h3>
+    <h3 class="title" style="font-weight: lighter;">Have choreo block? Keep repeating the same moves during your freestyle? If so, then this program is for you!</h3>
+    <h3 class="title" style="font-weight: lighter; margin-bottom: 25px;">How to use: First, select which art forms you would like to use at the bottom of the screen. Then, feel free to try of the buttons.</h3>
+    
+    <div class="grid-container">
+        <button id="move" onclick="new_move()" title="generate a random move">New Move</button>
+        <button id="pathway" onclick="new_pathway()" title="generate an amount of random moves to try in a sequence">New Combos / Pathways</button>
+        <button id="texture" onclick="new_modifiers()" title="generate a random texture">Modifiers</button>
+        <button id="concept" onclick="story_concepts()" title="generate a random concept to try to dance to">Storytelling / Concepts</button>
+        <button id="isolate" onclick="isolate()" title="get a random body part to focus your dance around">Isolate Body Parts</button>
+        <button id="shape" onclick="shapes()" title="get a random shape to guide your movement">Shapes</button>
+        <button id="affirmation" onclick="new_affirmations()" title="makes you feel good">Affirmations</button>
+        <button id="help" onclick="just_help_me()" title="picks a button for you">Just Help Me!</button>
+        <button id="filter" onclick="filter()" title="filter which dance art forms you would like to use">Filter</button>
+    </div>
+
+    <div class="textbox-border">
+        <p id="textbox">~</p>
+
+        <div id="num-input-container">
+            <output>2</output>
+            <input id="num-input" type="range" min="2" max="7" step="1" oninput="this.previousElementSibling.value = this.value">
+            <button onclick="new_pathway_part2()">OK</button>
+        </div>
+
+        <ol id="filter-checklist" style="text-align: left;"></ol>
+    </div>
+
+    <script src="unblocked.js"></script>
+</body>
+</html>
