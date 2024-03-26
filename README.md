@@ -12,15 +12,15 @@ Follow these instructions to get Unblocked running on your computer.
     cd unblocked
     ```
 
-## Usage
-
-1. **Load Website:**
+2. **Load Website:**
     - Open `unblocked.html` in a browser.
 
-2. **Filter art forms (dance genres):**
+## Usage
+
+1. **Filter art forms (dance genres):**
     - Select art form(s) from the checklist.
 
-3. **Use the buttons to interact with the website:**
+2. **Use the buttons to interact with the website:**
 
 ### Buttons
 - `New Move`: Displays a single new move
