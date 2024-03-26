@@ -1,0 +1,87 @@
+:root {
+    --bg-color-r: 51;
+    --bg-color-g: 51;
+    --bg-color-b: 51;
+
+    --bg-color: rgb(var(--bg-color-r), var(--bg-color-g), var(--bg-color-b));
+    --button-color: rgb(0, 251, 152);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.title {
+    text-align: center;
+    color: var(--button-color);
+    font: bold 16px Arial, Sans-serif;
+    line-height: 20px;
+}
+
+.grid-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    justify-content: center;
+    gap: 20px;
+}
+
+.grid-container > button {
+    background-color: var(--bg-color);
+    color: var(--button-color);
+    border: solid var(--button-color) 3px;
+    padding: 20px;
+    border-radius: 16px;
+    font-size: 20px;
+    transition: all ease 0.3s;
+}
+
+.grid-container > button:hover {
+    background-color: var(--button-color);
+    border: solid var(--button-color) 3px;
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+#textbox, #filter-checklist {
+    color: var(--button-color);
+    font: normal 20px Arial, Sans-serif;
+}
+
+.textbox-border {
+    text-align: center;
+    border: solid var(--button-color) 3px;
+    border-radius: 16px;
+    margin: 20px 38% 0px 38%;
+    padding: 0px 10px;
+}
+
+#num-input-container {
+    display: none;
+    justify-content: center;
+    padding: 5px;
+}
+
+output, button {
+    color: var(--button-color);
+    background-color: var(--bg-color);
+    font: normal 20px Arial, Sans-serif;
+    border: solid var(--button-color) 2px;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(calc(var(--bg-color-r) + 45), calc(var(--bg-color-g) + 45), calc(var(--bg-color-b) + 45));
+}
+
+#num-input-container > input {
+    margin: 0px 10px;
+}
+
+input[type="checkbox"] {
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+}
